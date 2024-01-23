@@ -1,12 +1,12 @@
 import argparse
-from enum import StrEnum
+from enum import Enum
 import os
 import magic
 import pandas as pd
 import numpy as np
 
 
-class Site(StrEnum):
+class Site(str, Enum):
   # Stations
   sandton = "Sandton"
   hatfield = "Hatfield"
